@@ -9,7 +9,7 @@ function Contact() {
 
   const onFormSend = (ev) => {
     ev.preventDefault();
-    console.log('process2', process.env);
+
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -31,11 +31,11 @@ function Contact() {
     <div>
       <Form innerRef={formRef} onSubmit={onFormSend}>
         <FormGroup className="">
-          <Input type="text" bsSize="md" name="name" placeholder="Your name" />
+          <Input type="text" bsSize="md" name="user_name" placeholder="Your name" />
         </FormGroup>
 
         <FormGroup className="">
-          <Input type="email" bsSize="md" name="email" placeholder="Your contact email" />
+          <Input type="email" bsSize="md" name="user_email" placeholder="Your contact email" />
         </FormGroup>
 
         <FormGroup className="">
