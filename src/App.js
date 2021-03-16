@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="app d-flex flex-column">
+    <div>
       <Header />
 
       <Switch>
